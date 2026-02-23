@@ -61,6 +61,15 @@ function App() {
     <div className="min-h-screen bg-abyss text-white bg-glow bg-grid">
       <div className="max-w-6xl mx-auto px-4 py-12 relative z-10">
         <div className="animate-fadeIn">
+          {/* Breadcrumb */}
+          <nav className="mb-8 text-sm text-galactic">
+            <a href="https://seo-tools-tau.vercel.app/" className="text-azure hover:text-white transition-colors">Free Tools</a>
+            <span className="mx-2 text-metal">/</span>
+            <a href="https://seo-tools-tau.vercel.app/social-media/" className="text-azure hover:text-white transition-colors">Social Media Tools</a>
+            <span className="mx-2 text-metal">/</span>
+            <span className="text-cloudy">Social Media Post Previewer</span>
+          </nav>
+
           {/* Header */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center px-4 py-2 mb-6 border border-turtle text-turtle text-sm font-medium rounded-full">
