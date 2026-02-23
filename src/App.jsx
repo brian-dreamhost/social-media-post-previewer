@@ -33,14 +33,12 @@ function App() {
   const [linkCard, setLinkCard] = useState(INITIAL_LINK_CARD);
   const [activeTab, setActiveTab] = useState(TABS[0]);
 
-  /* ========== DEV MODE START - Remove this block for production ========== */
   const fillTestData = () => {
     setProfile(DUMMY_DATA.profile);
     setPostText(DUMMY_DATA.postText);
     setImageUrl(DUMMY_DATA.imageUrl);
     setLinkCard(DUMMY_DATA.linkCard);
   };
-  /* ========== DEV MODE END ========== */
 
   const previewProps = { profile, postText, imageUrl, linkCard };
 
@@ -76,19 +74,15 @@ function App() {
             </p>
           </div>
 
-          {/* ========== DEV MODE START - Remove this block for production ========== */}
-          {import.meta.env.DEV && (
-            <div className="flex justify-end mb-4">
-              <button
-                type="button"
-                onClick={fillTestData}
-                className="px-3 py-1.5 text-xs font-mono bg-prince/20 text-prince border border-prince/30 rounded hover:bg-prince/30 transition-colors focus:outline-none focus:ring-2 focus:ring-prince focus:ring-offset-2 focus:ring-offset-abyss"
-              >
-                Fill Test Data
-              </button>
-            </div>
-          )}
-          {/* ========== DEV MODE END ========== */}
+          <div className="flex justify-end mb-4">
+            <button
+              type="button"
+              onClick={fillTestData}
+              className="px-3 py-1.5 text-xs font-mono bg-prince/20 text-prince border border-prince/30 rounded hover:bg-prince/30 transition-colors focus:outline-none focus:ring-2 focus:ring-prince focus:ring-offset-2 focus:ring-offset-abyss"
+            >
+              Fill Test Data
+            </button>
+          </div>
 
           {/* Profile Form */}
           <ProfileForm profile={profile} setProfile={setProfile} />
