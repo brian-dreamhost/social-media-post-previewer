@@ -75,7 +75,7 @@ function App() {
             <div className="inline-flex items-center px-4 py-2 mb-6 border border-turtle text-turtle text-sm font-medium rounded-full">
               Free Tool
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-5">
+            <h1 className="text-[2.7rem] md:text-[3.6rem] font-bold text-white mb-5">
               Social Media Post Previewer
             </h1>
             <p className="text-lg text-cloudy max-w-2xl mx-auto leading-relaxed">
