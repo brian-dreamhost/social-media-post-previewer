@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-abyss text-white bg-glow bg-grid">
-      <div className="max-w-6xl mx-auto px-4 py-12 relative z-10">
+      <div className="max-w-[1600px] mx-auto px-4 py-12 relative z-10">
         <div className="animate-fadeIn">
           {/* Breadcrumb */}
           <nav className="mb-8 text-sm text-galactic">
@@ -117,7 +117,7 @@ function App() {
               id={`tabpanel-${activeTab.toLowerCase()}`}
               aria-labelledby={`tab-${activeTab.toLowerCase()}`}
             >
-              <div key={activeTab} className="animate-fadeIn">
+              <div key={activeTab} className="animate-slideUp">
                 {renderPreview()}
               </div>
             </div>
@@ -127,7 +127,7 @@ function App() {
 
       {/* Footer */}
       <footer className="border-t border-metal/30 mt-12">
-        <div className="max-w-6xl mx-auto px-4 py-6">
+        <div className="max-w-[1600px] mx-auto px-4 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-galactic">
             <p className="text-center sm:text-left">Free Social Media Post Previewer — Part of the DreamHost Social Media Tools collection</p>
             <div className="flex items-center gap-4">
